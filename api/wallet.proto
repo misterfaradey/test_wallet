@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package wallet;
+option go_package = "walletpb";
+
+import "google/api/annotations.proto";
+
+service Wallet {
+  rpc Create(CreateRequest) returns (CreateResponse) {
+    option (google.api.http) = {
+      post: "/wallet/create"
+      body: "*"
+    };
+  }
+}
+
+message CreateRequest{
+
+}
+
+message CreateResponse{
+
+}
