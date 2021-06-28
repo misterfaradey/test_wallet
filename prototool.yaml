@@ -1,0 +1,9 @@
+excludes:
+  - ./vendor.pb
+  - ./api
+  - ./vendor
+#generate:
+#  # Options that will apply to all plugins of type go, gogo, gogrpc, gogogrpc.
+#  go_options:
+#    extra_modifiers:
+#      google/api/annotations.proto: github.com/gogo/googleapis/google/api
